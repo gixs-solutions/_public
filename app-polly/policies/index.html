@@ -4,93 +4,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Polly</title>
+    <title>Términos del Servicio, Reglas & Política de Privacidad — Polly Games</title>
+    <meta name="description" content="Términos del Servicio, Reglas del Juego y Política de Privacidad oficial de Polly Games por GIXS Solutions.">
     <style>
+        :root {
+            --primary: #FF7A00;
+            --primary-dark: #E65100;
+            --primary-light: #FFF3E0;
+            --secondary: #2563EB;
+            --dark: #0F172A;
+            --text-main: #334155;
+            --text-muted: #64748B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --badge-bg: #FEF3C7;
+            --badge-text: #92400E;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background-color: #f8fafc;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.65;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            padding: 40px 16px;
         }
 
         .container {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 48px 40px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            border: 1px solid var(--border-color);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 28px;
+            margin-bottom: 32px;
+        }
+
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            font-size: 0.82rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            margin-bottom: 14px;
         }
 
         h1 {
-            color: #2563eb;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 15px;
-            margin-top: 0;
+            color: var(--dark);
+            font-size: 2rem;
+            font-weight: 900;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .meta-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
         }
 
         h2 {
-            color: #1e40af;
-            margin-top: 35px;
-            font-size: 1.3em;
+            color: var(--dark);
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
         }
 
         p {
             margin-bottom: 16px;
-            color: #475569;
+            color: var(--text-main);
+            font-size: 0.98rem;
+        }
+
+        ul {
+            margin-bottom: 18px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+        }
+
+        .alert-box {
+            background-color: #FFFBEB;
+            border: 1px solid #FDE68A;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 20px 0;
+            font-size: 0.92rem;
+            color: #78350F;
+        }
+
+        .alert-box strong {
+            color: #92400E;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .security-box {
+            background-color: #F0FDF4;
+            border: 1px solid #BBF7D0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 20px 0;
+            font-size: 0.92rem;
+            color: #14532D;
+        }
+
+        .security-box strong {
+            color: #166534;
+            display: block;
+            margin-bottom: 4px;
         }
 
         .footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #e2e8f0;
-            font-size: 0.9em;
-            color: #94a3b8;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.88rem;
+            color: var(--text-muted);
             text-align: center;
+        }
+
+        .footer a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 8px;
+            }
+
+            .container {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 1.55rem;
+            }
+
+            h2 {
+                font-size: 1.15rem;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Política de Privacidad de Polly</h1>
-        <p><strong>Última actualización:</strong> Agosto 2026</p>
+        <div class="header">
+            <div class="brand-badge">🐥 GIXS Solutions • Documento Oficial</div>
+            <h1>Términos del Servicio, Reglas del Juego y Política de Privacidad</h1>
+            <div class="meta-info">
+                <span><strong>Aplicación:</strong> Polly Games</span>
+                <span><strong>Última Actualización:</strong> Septiembre 2026</span>
+                <span><strong>Vigencia:</strong> Global</span>
+            </div>
+        </div>
 
-        <h2>1. Información que recopilamos</h2>
-        <p>En Polly, recopilamos únicamente la información necesaria para gestionar tu progreso en el juego, puntajes y
-            compras dentro de la aplicación. Esto incluye un identificador anónimo de usuario (Silent Auth), el nombre
-            de usuario (alias) configurado y los registros de partidas, puntuaciones y compras in-app procesadas
-            mediante proveedores seguros como RevenueCat y Google Play Billing.</p>
+        <p>Bienvenido a <strong>Polly Games</strong> (en adelante, la "Aplicación" o el "Juego"), desarrollado y operado por <strong>GIXS Solutions</strong>. Al descargar, instalar, acceder o jugar a Polly Games, usted (el "Usuario" o "Jugador") acepta de forma vinculante los presentes Términos del Servicio, Reglas del Juego y Política de Privacidad.</p>
 
-        <h2>2. Uso de la información</h2>
-        <p>La información recopilada se utiliza exclusivamente para sincronizar tu progreso, gestionar la tabla de
-            clasificación global (leaderboard), procesar transacciones de elementos digitales e in-app, e incentivar las
-            funciones de retos virales. No vendemos ni compartimos tu información personal con terceros para fines
-            publicitarios.</p>
+        <h2>1. Naturaleza del Servicio y Bienes Digitales</h2>
+        <p>Polly Games es un videojuego de habilidad, destreza y entretenimiento interactivo. Dentro del juego, los usuarios pueden obtener y utilizar elementos virtuales como <strong>Monedas de Oro (🪙)</strong>, <strong>Skins Cosméticas</strong>, animaciones y potenciadores.</p>
+        <div class="alert-box">
+            <strong>⚠️ Declaración Legal sobre Bienes Virtuales:</strong>
+            Todas las monedas virtuales, skins y recompensas obtenidas (ya sea jugando o mediante compras integradas) constituyen una <em>licencia de uso digital limitada, revocable y no exclusiva</em>. <strong>No poseen valor monetario real en el mundo físico</strong>, no generan intereses y bajo ninguna circunstancia pueden ser transferidas, canjeadas, reembolsadas o convertidas en dinero de curso legal, criptomonedas u otros bienes tangibles.
+        </div>
 
-        <h2>3. Seguridad de los datos</h2>
-        <p>Aplicamos una arquitectura de seguridad Zero-Trust y políticas de seguridad a nivel de fila (RLS) en nuestra
-            base de datos para proteger la integridad de tus registros. Todas las comunicaciones entre la aplicación y
-            nuestros servidores se realizan mediante conexiones encriptadas HTTPS/TLS.</p>
+        <h2>2. Compras Integradas (In-App Purchases) y Reembolsos</h2>
+        <ul>
+            <li><strong>Procesamiento Seguro:</strong> Todas las transacciones monetarias se realizan exclusivamente a través de la pasarela oficial <strong>Google Play Billing</strong> y son verificadas mediante <strong>RevenueCat</strong>. GIXS Solutions nunca recopila ni almacena información financiera, bancaria o números de tarjetas de crédito.</li>
+            <li><strong>Política de No Reembolso:</strong> Dado que las monedas y skins son bienes digitales entregados y activados de forma inmediata en la cuenta del jugador, todas las compras se consideran definitivas. Las solicitudes de reembolso quedan estrictamente sujetas a los criterios y políticas de reembolso vigentes de Google Play Store.</li>
+        </ul>
 
-        <h2>4. Transacciones y Compras In-App</h2>
-        <p>Todas las compras dentro de la aplicación son procesadas de forma segura a través de la plataforma Google
-            Play Billing. No almacenamos ni tenemos acceso a tus datos financieros o de tarjetas de crédito.</p>
+        <h2>3. Reglas del Juego, Juego Limpio (Fair Play) y Anti-Trampas</h2>
+        <p>Para garantizar una competencia sana y equitativa en los Rankings Globales y Retos Virales, queda estrictamente prohibido:</p>
+        <ul>
+            <li>El uso de herramientas de modificación de memoria, software de terceros no autorizados (ej. GameGuardian, Cheat Engine, Lucky Patcher).</li>
+            <li>La ejecución de bots automatizados, scripts de auto-salto o emulaciones alteradas.</li>
+            <li>La explotación deliberada de errores técnicos (exploits) o la inyección de puntuaciones falsas.</li>
+        </ul>
+        <div class="security-box">
+            <strong>🛡️ Protección Serverless y Sanciones:</strong>
+            Todas las puntuaciones y compras son auditadas mediante políticas de seguridad Zero-Trust y validación en Supabase. GIXS Solutions se reserva el derecho de invalidar puntuaciones anómalas, restablecer saldos no legítimos o revocar el acceso a las funciones en línea a cualquier usuario que vulnere el juego limpio, sin previo aviso ni derecho a compensación.
+        </div>
 
-        <h2>5. Eliminación de Cuenta y Datos</h2>
-        <p>Usted tiene el control total sobre su información. En cualquier momento puede solicitar la eliminación
-            definitiva e irreversible de su cuenta anónima, alias, historial de puntuaciones y todos los datos
-            asociados. Puede solicitar la eliminación directamente desde las opciones dentro de la aplicación o enviando
-            una solicitud por correo electrónico a soporte.apps@gixs.dev con el asunto "Solicitud de eliminación de
-            cuenta - Polly".</p>
+        <h2>4. Política de Privacidad y Tratamiento de Datos</h2>
+        <p>Nos comprometemos a proteger su privacidad bajo el principio de minimización de datos:</p>
+        <ul>
+            <li><strong>Autenticación Anónima (Silent Auth):</strong> Para jugar no solicitamos correo electrónico obligatorio, número telefónico ni contraseña. Se genera un identificador anónimo único vinculado a la instalación.</li>
+            <li><strong>Datos Almacenados:</strong> ID anónimo de jugador, alias público (nombre de pantalla), récords de puntuación, progreso de retos, balance de monedas y compras in-app asociadas.</li>
+            <li><strong>Telemetría de Rendimiento:</strong> Recopilamos datos técnicos anónimos del dispositivo (versión de SO, idioma, modelo) exclusivamente para optimización de rendimiento y resolución de fallos.</li>
+            <li><strong>Cero Venta de Datos:</strong> No comercializamos, alquilamos ni cedemos información de los usuarios a terceros con fines publicitarios o de rastreo.</li>
+        </ul>
 
-        <h2>6. Contacto</h2>
-        <p>Si tienes preguntas o inquietudes sobre esta Política de Privacidad o el manejo de tus datos, puedes
-            contactarnos a través de <strong>dev.console@gixs.dev</strong>.</p>
+        <h2>5. Propiedad Intelectual</h2>
+        <p>Todos los personajes (incluyendo a <em>Polly</em>), modelos 3D, texturas, bandas sonoras, efectos de sonido, diseño de niveles, código fuente, logotipos y elementos de marca son propiedad intelectual exclusiva de <strong>GIXS Solutions</strong>. Queda prohibida su reproducción, extracción, distribución o explotación no autorizada.</p>
+
+        <h2>6. Limitación de Responsabilidad</h2>
+        <p>La Aplicación se proporciona "tal cual" (<em>as is</em>) y "según disponibilidad". GIXS Solutions no garantiza que el servicio esté libre de interrupciones imprevistas derivadas de fallos en servicios en la nube de terceros, problemas de conectividad a internet del usuario o incompatibilidades técnicas con dispositivos modificados (root/jailbreak). GIXS Solutions no se hace responsable por pérdidas de datos ocasionadas por la desinstalación voluntaria de la app sin sincronización previa.</p>
+
+        <h2>7. Eliminación de Datos y Derecho al Olvido (GDPR / CCPA)</h2>
+        <p>El usuario tiene el derecho inalienable de solicitar la eliminación total y definitiva de su identificador anónimo, alias, historial de partidas y todos los registros asociados en nuestros servidores. Para ejercer este derecho, puede escribir a <strong>dev.console@gixs.dev</strong> con el asunto <em>"Solicitud de Eliminación de Datos — Polly"</em>, indicando su alias de jugador.</p>
+
+        <h2>8. Contacto Oficial</h2>
+        <p>Para soporte técnico, aclaraciones sobre estos términos o consultas de seguridad, puede contactarnos a través de nuestros canales oficiales:</p>
+        <ul>
+            <li><strong>Correo Electrónico de Soporte:</strong> <a href="mailto:dev.console@gixs.dev">dev.console@gixs.dev</a></li>
+            <li><strong>Sitio Web Oficial:</strong> <a href="https://gixs.dev" target="_blank" rel="noopener">https://gixs.dev</a></li>
+        </ul>
 
         <div class="footer">
-            &copy; 2026 GIXS Solutions. Todos los derechos reservados.
+            <p>&copy; 2026 <strong>GIXS Solutions</strong>. Todos los derechos reservados.</p>
+            <p>Polly Games es una marca y desarrollo registrado por GIXS Solutions.</p>
         </div>
     </div>
 </body>
